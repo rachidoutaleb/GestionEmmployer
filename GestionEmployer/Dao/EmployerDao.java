@@ -1,7 +1,7 @@
-
 package com.example.GestionEmployer.Dao;
 
-import jakarta.persistence.*;
+import com.example.GestionEmployer.Entity.Employer;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public class EmployerDao {
+public interface EmployerDao extends JpaRepository<Employer, Integer> {
 }
