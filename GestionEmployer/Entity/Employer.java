@@ -13,21 +13,30 @@ public class Employer {
     private int id;
     private String name;
     private String prenom;
+    private String email;
     private Date datedeNaissance;
 
     public Employer() {
     }
 
-    public Employer(int id, String name, String prenom, Date datedeNaissance, int age) {
+    public Employer(int id, String name, String prenom, Date datedeNaissance, String email) {
         this.id = id;
         this.name = name;
         this.prenom = prenom;
         this.datedeNaissance = datedeNaissance;
+        this.email = email;
     }
 
     public void setId(int id) {
         this.id = id;
     }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+
 
     public void setName(String name) {
         this.name = name;
@@ -48,6 +57,10 @@ public class Employer {
 
     public String getName() {
         return name;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public String getPrenom() {
